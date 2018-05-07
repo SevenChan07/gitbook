@@ -1,0 +1,10 @@
+{
+    "plugins": [
+      "codepen"
+    ],
+    "pluginsConfig": {
+      "theme-default": {
+        "showLevel": true
+      }
+    }
+}
