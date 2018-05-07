@@ -1,0 +1,401 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>简单柱状图 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="./" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                        <b>1.1.</b>
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../svg/">
+            
+                <a href="../svg/">
+            
+                    
+                        <b>1.2.</b>
+                    
+                    SVG入门
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../svg/1.html">
+            
+                <a href="../svg/1.html">
+            
+                    
+                        <b>1.2.1.</b>
+                    
+                    绘制一只猫
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../dom/">
+            
+                <a href="../dom/">
+            
+                    
+                        <b>1.3.</b>
+                    
+                    数据与DOM
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../dom/1.html">
+            
+                <a href="../dom/1.html">
+            
+                    
+                        <b>1.3.1.</b>
+                    
+                    操作DOM
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../dom/2.html">
+            
+                <a href="../dom/2.html">
+            
+                    
+                        <b>1.3.2.</b>
+                    
+                    数据绑定
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="./">
+            
+                <a href="./">
+            
+                    
+                        <b>1.4.</b>
+                    
+                    绘制图形初级
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.4.1" data-path="1.html">
+            
+                <a href="1.html">
+            
+                    
+                        <b>1.4.1.</b>
+                    
+                    简单柱状图
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >简单柱状图</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x7B80;&#x5355;&#x67F1;&#x72B6;&#x56FE;">&#x7B80;&#x5355;&#x67F1;&#x72B6;&#x56FE;</h1>
+<p>&#x67F1;&#x72B6;&#x56FE;&#x662F;&#x6700;&#x57FA;&#x672C;&#x6700;&#x5E38;&#x89C1;&#x7684;&#x53EF;&#x89C6;&#x5316;&#x56FE;&#x5F62;&#x3002;&#x4F7F;&#x7528;<code>d3.js</code>&#x7ED8;&#x5236;&#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x7684;&#x67F1;&#x72B6;&#x56FE;&#x3002;</p>
+<p>&#x9488;&#x5BF9;&#x4EE5;&#x4E0B;&#x6570;&#x636E;&#xFF0C;&#x7ED8;&#x5236;&#x4E00;&#x5F20;&#x67F1;&#x72B6;&#x56FE;&#x3002;&#x5982;&#x679C;&#x662F;&#x624B;&#x7ED8;&#xFF0C;&#x4F60;&#x5E94;&#x8BE5;&#x80FD;&#x5F88;&#x5FEB;&#x753B;&#x51FA;&#x6765;&#xFF1A;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> data = [
+  { year: <span class="hljs-string">&apos;1951 &#x5E74;&apos;</span>, sales: <span class="hljs-number">38</span> },
+  { year: <span class="hljs-string">&apos;1952 &#x5E74;&apos;</span>, sales: <span class="hljs-number">52</span> },
+  { year: <span class="hljs-string">&apos;1956 &#x5E74;&apos;</span>, sales: <span class="hljs-number">61</span> },
+  { year: <span class="hljs-string">&apos;1957 &#x5E74;&apos;</span>, sales: <span class="hljs-number">145</span> },
+  { year: <span class="hljs-string">&apos;1958 &#x5E74;&apos;</span>, sales: <span class="hljs-number">48</span> },
+  { year: <span class="hljs-string">&apos;1959 &#x5E74;&apos;</span>, sales: <span class="hljs-number">38</span> },
+  { year: <span class="hljs-string">&apos;1960 &#x5E74;&apos;</span>, sales: <span class="hljs-number">38</span> },
+  { year: <span class="hljs-string">&apos;1962 &#x5E74;&apos;</span>, sales: <span class="hljs-number">38</span> }
+]
+</code></pre>
+<p>&#x5B9A;&#x4E49;&#x5750;&#x6807;&#x8F74;&#x7684;&#x6BD4;&#x4F8B;&#x5C3A;&#xFF0C;width&#x4E3A;x&#x8F74;&#x7684;&#x5BBD;&#x5EA6;&#xFF0C;height&#x4E3A;y&#x8F74;&#x7684;&#x9AD8;&#x5EA6;&#xFF1A;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> x = d3.scaleBand().range([<span class="hljs-number">0</span>, width])
+<span class="hljs-keyword">const</span> y = d3.scaleLinear().range([height, <span class="hljs-number">0</span>])
+</code></pre>
+<p>&#x5B9A;&#x4E49;&#x597D;x&#x8F74;&#x4E0E;y&#x8F74;&#x7684;&#x5B9A;&#x4E49;&#x57DF;&#xFF1A;</p>
+<pre><code class="lang-js">x.domain(data.map(item =&gt; item.year))
+y.domain([<span class="hljs-number">0</span>, d3.max(data, item =&gt; item.sales)])
+</code></pre>
+<p>&#x7136;&#x540E;&#x5C31;&#x80FD;&#x628A;x&#x8F74;&#xFF0C;y&#x8F74;&#x7ED8;&#x5236;&#x51FA;&#x6765;&#x4E86;&#xFF1A;</p>
+<pre><code class="lang-js">g.append(<span class="hljs-string">&apos;g&apos;</span>)
+  .attr(<span class="hljs-string">&apos;transform&apos;</span>, <span class="hljs-string">`translate(0, <span class="hljs-subst">${height}</span>)`</span>)
+  .call(d3.axisBottom(x))
+
+g.append(<span class="hljs-string">&apos;g&apos;</span>)
+  .call(d3.axisLeft(y))
+</code></pre>
+<p>&#x6700;&#x540E;&#xFF0C;&#x518D;&#x628A;&#x67F1;&#x72B6;&#x56FE;&#x7684;&#x4E00;&#x6839;&#x6839;&#x67F1;&#x5B50;&#x7ED8;&#x5236;&#x4E0A;&#x53BB;&#xFF0C;&#x4E00;&#x6839;&#x67F1;&#x5B50;&#x5C31;&#x662F;&#x4E00;&#x4E2A;<code>rect</code>&#xFF0C;&#x6240;&#x4EE5;&#x8981;&#x6307;&#x5B9A;&#x5B83;&#x7684;&#x4F4D;&#x7F6E;&#x4EE5;&#x53CA;&#x957F;&#x5BBD;&#xFF1A;</p>
+<pre><code class="lang-js">g.selectAll(<span class="hljs-string">&apos;.bar&apos;</span>)
+  .data(data)
+  .enter()
+  .append(<span class="hljs-string">&apos;rect&apos;</span>)
+  .attr(<span class="hljs-string">&apos;class&apos;</span>, <span class="hljs-string">&apos;bar&apos;</span>)
+  .attr(<span class="hljs-string">&apos;x&apos;</span>, item =&gt; x(item.year))
+  .attr(<span class="hljs-string">&apos;y&apos;</span>, item =&gt; y(item.sales))
+  .attr(<span class="hljs-string">&apos;width&apos;</span>, x.bandwidth())
+  .attr(<span class="hljs-string">&apos;height&apos;</span>, item =&gt; height - y(item.sales))
+  .attr(<span class="hljs-string">&apos;fill&apos;</span>, <span class="hljs-string">&apos;steelblue&apos;</span>)
+</code></pre>
+<p>&#x662F;&#x4E0D;&#x662F;&#x5F88;&#x7B80;&#x5355;&#xFF0C;&#x67E5;&#x770B;&#x6700;&#x540E;&#x7684;&#x5B8C;&#x6210;&#x54C1;&#xFF1A;
+</p><p data-height="300" data-theme-id="1" data-slug-hash="yjParp" data-default-tab="result" data-user="sevenchan07" class="codepen">See the Pen <a href="http://codepen.io/sevenchan07/pen/yjParp/" target="_blank"></a> by sevenchan07 (<a href="http://codepen.io/sevenchan07" target="_blank">@sevenchan07</a>) on <a href="http://codepen.io" target="_blank">CodePen</a>.</p><p></p>
+<p>&#x5728;&#x7ED8;&#x5236;&#x7684;&#x8FC7;&#x7A0B;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x5F15;&#x5165;&#x4E86;&#x6BD4;&#x4F8B;&#x5C3A;&#xFF0C;&#x5B9A;&#x4E49;&#x57DF;&#x7684;&#x6982;&#x5FF5;&#xFF0C;&#x8FD9;&#x4E9B;&#x90FD;&#x662F;&#x975E;&#x5E38;&#x57FA;&#x7840;&#x800C;&#x91CD;&#x8981;&#x7684;&#x6982;&#x5FF5;&#x3002;&#x6211;&#x4EEC;&#x5C06;&#x5728;&#x4E0B;&#x4E00;&#x8282;&#x4E2D;&#x5177;&#x4F53;&#x9610;&#x8FF0;&#x5B83;&#x3002;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="./" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 绘制图形初级">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"简单柱状图","level":"1.4.1","depth":2,"previous":{"title":"绘制图形初级","level":"1.4","depth":1,"path":"shape/README.md","ref":"shape/README.md","articles":[{"title":"简单柱状图","level":"1.4.1","depth":2,"path":"shape/1.md","ref":"shape/1.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["codepen","livereload"],"pluginsConfig":{"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"codepen":{},"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"shape/1.md","mtime":"2018-05-07T09:25:48.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-05-07T08:27:52.138Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-codepen/embed-codepen.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
