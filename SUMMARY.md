@@ -8,3 +8,4 @@
   * [数据绑定](dom/2.md)
 * [绘制图形初级](shape/README.md)
   * [简单柱状图](shape/1.md)
+  * [常用比例尺](shape/2.md)
